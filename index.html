@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
-
-    <nav>
+    <nav id="navbar">
         <div class="logo">
             <img src="src/assets/logo.png" alt="">
             <h1>Striping King LLC</h2>
+            <div class="burguer" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <div class="elementos">
+        <div class="elementos" id="elementos">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#why-us">Why Choose Us</a>
@@ -82,44 +84,28 @@
     <section id="why-us" class="why-us">
         <div class="container">
             <h2>Meet our Team</h2>
-            <div class="col-ct">
-                <div class="col">
-                    <div class="cards">
-                        <div class="card">
-                            <h3>Skilled Professionals</h3>
-                            <p>Our crew brings consistent quality to every commercial project.</p>
-                        </div>
+            <div class="cards">
+                <div class="card-row">
+                    <div class="card">
+                        <h3>Skilled Professionals</h3>
+                        <p>Our crew brings consistent quality to every commercial project.</p>
+                    </div>
 
-                        <div class="card">
-                            <h3>Precision Tools</h3>
-                            <p>We work with reliable equipment built for accurate, lasting results.</p>
-                        </div>
+                    <div class="card">
+                        <h3>Precision Tools</h3>
+                        <p>We work with reliable equipment built for accurate, lasting results.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="src/assets/before.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-ct">
-                <div class="col">
-                    <video src="src/assets/why-us.mp4" autoplay muted loop></video>
-                </div>
-                <div class="col">
-                    <div class="cards">
-                        <div class="card">
-                            <h3>On-Time Delivery</h3>
-                            <p>Your projects are completed efficiently without sacrificing quality.</p>
-                        </div>
 
-                        <div class="card">
-                            <h3>Fair Pricing</h3>
-                            <p>We offer straightforward rates that fit commercial budgets.</p>
-                        </div>
+                <div class="card-row">
+                    <div class="card">
+                        <h3>On-Time Delivery</h3>
+                        <p>Your projects are completed efficiently without sacrificing quality.</p>
+                    </div>
 
-                        <div class="card">
-                            <h3>Commercial Expertise</h3>
-                            <p>We specialize in solutions designed for busy, high-traffic spaces.</p>
-                        </div>
+                    <div class="card">
+                        <h3>Fair Pricing</h3>
+                        <p>We offer straightforward rates that fit commercial budgets.</p>
                     </div>
                 </div>
             </div>
@@ -177,6 +163,8 @@
              </form>
         </div>
     </section>
+    
+    <div class="overlay" id="overlay"></div>
 
     <footer id="contact">
        <div class="container">
